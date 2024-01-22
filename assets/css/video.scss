@@ -1,0 +1,281 @@
+$c1:white;
+$c2:#00192E;
+$c3:#dac933;
+$c4:#0c7a15;
+* {
+    box-sizing: border-box;
+    color: black;
+}
+
+
+body {
+    font-family: Arial;
+    padding: 20px;
+    background: #fff4b4;
+    box-sizing: content-box;
+    border: none;
+    font: normal 100%/normal Arial, Helvetica, sans-serif;
+    color: $c1;
+    text-overflow: clip;
+    margin: auto auto;
+}
+.retour{
+    font-size: 20px;
+
+    display: block;
+    a{        margin:5px;
+        padding:5px;
+        text-decoration: none;
+        &:hover{
+        background-color: rgba(0, 0, 0, 0.13)}
+    }
+}
+nav{
+background-color: $c1;
+padding:5px;
+text-align: center;
+a{    
+    text-decoration: none;
+    &:hover{
+    background-color: rgba(0, 0, 0, 0.13)}
+}
+}
+header{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+      h1 {
+        flex: 100%;
+        text-align: center;
+      }
+      
+      details {
+        flex: 50%;
+      }
+      
+      @media (max-width: 800px) {
+        details, h1 {
+          flex: 100%;
+          
+        }
+      }
+.Dailymotion, .YouTube {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background-color: $c3;
+    padding:5px;
+border:$c1 solid 2px;
+
+summary{
+    font-size:larger;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+    iframe {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+    @media (orientation: landscape) {
+        .Dailymotion, .YouTube {
+            margin: auto auto;
+            display: block;
+            iframe {
+                width: 33vw;
+                height: 22vw;
+                align-self: auto;
+                margin: auto 0;
+                padding: 5px;
+            }
+        }
+    }
+    @media (orientation: portrait) {
+        .Dailymotion, .YouTube {
+            width: 100%;
+            iframe {
+                align-self: auto;
+                width: 100%;
+                height: 20vh;
+                margin: auto auto;
+            }
+        }
+    }
+}
+
+}
+h3{
+    background-color: $c3 ;
+    padding:5px;
+    text-align: center;
+    margin:0;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    @media screen and (max-width: 800px) {
+        .leftcolumn,
+        .rightcolumn {
+            flex:100%;
+            padding: 0;
+            background-color: $c1;
+        }
+    }
+
+.Chapitre,.Source,.Musique,.Remerciement{
+    border:2px solid $c3;
+    margin:10px;
+}
+
+
+.leftcolumn {
+
+    flex:50%;
+    background-color: $c1;
+
+
+.Chapitre{
+    li{
+        list-style: none;} 
+}
+
+
+    .Source {
+        li{
+            list-style: none;
+            &:before{
+                content: "👊"; 
+            }
+            &:after {
+                content: ",";
+            }
+        }
+        a {
+            display: inline-block;
+            padding: 5px;
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.13);
+                color: black;
+            }
+            &:nth-child(2n+1) {
+                color: $c4;
+            }
+
+            &:last-child:after {
+                content: "";
+            }
+        }
+    }
+}
+
+
+
+
+.rightcolumn {
+    flex:50%;
+    background-color: $c1;
+.Musique{
+    li{
+        list-style: none;
+        &:before{
+            content:"🎼";
+        }
+        &:after {
+            content: ",";
+        }
+    }
+    a {
+        display: inline-block;
+        padding: 5px;
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.13);
+            color: black;
+        }
+        &:nth-child(2n+1) {
+            color: $c4;
+        }
+
+        &:last-child:after {
+            content: "";
+        }
+    }
+
+}
+.Remerciement{
+    flex:50%;
+    ul {
+        list-style-type: none;
+        border-left: $c3 5px solid;
+        padding: 0;
+        background-color: $c1;
+        border-bottom: $c3 1px solid;
+        li {
+            &:first-letter {
+                text-transform: uppercase;
+            }
+            &:first-child {
+                font-weight: bold;
+                background-color: $c3;
+                color: white;
+                padding: 2px;
+                margin-bottom: 10px;
+                // C'est partit pour mettre tout les types d'aides et leurs assigner une icone
+                &[aide=voix] {
+                    &:before {
+                        content: "🗣️";
+                    }
+                }
+                &[aide=testeur] {
+                    &:before {
+                        content: "🎮";
+                    }
+                }
+                &[aide=monteur] {
+                    &:before {
+                        content: "💾";
+                    }
+                }
+                &[aide=document] {
+                    &:before {
+                        content: "📃";
+                    }
+                }
+
+                // C'est bon !
+            }
+            &:not(li:first-child) {
+                margin-left: 10px;
+                padding-bottom: 20px;
+                &:before {
+                    content: " 👉 ";
+                }
+            }
+        }
+    }
+}}}
+
+footer{
+    flex:100;
+    display: flex;
+    flex-direction: column;
+    background-color: $c1;
+    div{
+        p{
+            &:first-child{
+background-color:$c3 ;
+font-weight: bold;
+            }
+        }
+        list-style-type: none;
+        border-left: $c3 5px solid;
+        padding-left: 5px;
+        background-color: wheat;
+        border-bottom: $c3 1px solid;
+    }
+}

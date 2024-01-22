@@ -1,0 +1,246 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  color: black;
+}
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #fff4b4;
+  box-sizing: content-box;
+  border: none;
+  font: normal 100%/normal Arial, Helvetica, sans-serif;
+  color: white;
+  text-overflow: clip;
+  margin: auto auto;
+}
+
+.retour {
+  font-size: 20px;
+  display: block;
+}
+.retour a {
+  margin: 5px;
+  padding: 5px;
+  text-decoration: none;
+}
+.retour a:hover {
+  background-color: rgba(0, 0, 0, 0.13);
+}
+
+nav {
+  background-color: white;
+  padding: 5px;
+  text-align: center;
+}
+nav a {
+  text-decoration: none;
+}
+nav a:hover {
+  background-color: rgba(0, 0, 0, 0.13);
+}
+
+header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+header h1 {
+  flex: 100%;
+  text-align: center;
+}
+header details {
+  flex: 50%;
+}
+@media (max-width: 800px) {
+  header details, header h1 {
+    flex: 100%;
+  }
+}
+header .Dailymotion, header .YouTube {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-color: #dac933;
+  padding: 5px;
+  border: white solid 2px;
+}
+header .Dailymotion summary, header .YouTube summary {
+  font-size: larger;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+header .Dailymotion iframe, header .YouTube iframe {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+@media (orientation: landscape) {
+  header .Dailymotion .Dailymotion, header .Dailymotion .YouTube, header .YouTube .Dailymotion, header .YouTube .YouTube {
+    margin: auto auto;
+    display: block;
+  }
+  header .Dailymotion .Dailymotion iframe, header .Dailymotion .YouTube iframe, header .YouTube .Dailymotion iframe, header .YouTube .YouTube iframe {
+    width: 33vw;
+    height: 22vw;
+    align-self: auto;
+    margin: auto 0;
+    padding: 5px;
+  }
+}
+@media (orientation: portrait) {
+  header .Dailymotion .Dailymotion, header .Dailymotion .YouTube, header .YouTube .Dailymotion, header .YouTube .YouTube {
+    width: 100%;
+  }
+  header .Dailymotion .Dailymotion iframe, header .Dailymotion .YouTube iframe, header .YouTube .Dailymotion iframe, header .YouTube .YouTube iframe {
+    align-self: auto;
+    width: 100%;
+    height: 20vh;
+    margin: auto auto;
+  }
+}
+
+h3 {
+  background-color: #dac933;
+  padding: 5px;
+  text-align: center;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 800px) {
+  main .leftcolumn,
+  main .rightcolumn {
+    flex: 100%;
+    padding: 0;
+    background-color: white;
+  }
+}
+main .Chapitre, main .Source, main .Musique, main .Remerciement {
+  border: 2px solid #dac933;
+  margin: 10px;
+}
+main .leftcolumn {
+  flex: 50%;
+  background-color: white;
+}
+main .leftcolumn .Chapitre li {
+  list-style: none;
+}
+main .leftcolumn .Source li {
+  list-style: none;
+}
+main .leftcolumn .Source li:before {
+  content: "👊";
+}
+main .leftcolumn .Source li:after {
+  content: ",";
+}
+main .leftcolumn .Source a {
+  display: inline-block;
+  padding: 5px;
+}
+main .leftcolumn .Source a:hover {
+  background-color: rgba(0, 0, 0, 0.13);
+  color: black;
+}
+main .leftcolumn .Source a:nth-child(2n+1) {
+  color: #0c7a15;
+}
+main .leftcolumn .Source a:last-child:after {
+  content: "";
+}
+main .rightcolumn {
+  flex: 50%;
+  background-color: white;
+}
+main .rightcolumn .Musique li {
+  list-style: none;
+}
+main .rightcolumn .Musique li:before {
+  content: "🎼";
+}
+main .rightcolumn .Musique li:after {
+  content: ",";
+}
+main .rightcolumn .Musique a {
+  display: inline-block;
+  padding: 5px;
+}
+main .rightcolumn .Musique a:hover {
+  background-color: rgba(0, 0, 0, 0.13);
+  color: black;
+}
+main .rightcolumn .Musique a:nth-child(2n+1) {
+  color: #0c7a15;
+}
+main .rightcolumn .Musique a:last-child:after {
+  content: "";
+}
+main .rightcolumn .Remerciement {
+  flex: 50%;
+}
+main .rightcolumn .Remerciement ul {
+  list-style-type: none;
+  border-left: #dac933 5px solid;
+  padding: 0;
+  background-color: white;
+  border-bottom: #dac933 1px solid;
+}
+main .rightcolumn .Remerciement ul li:first-letter {
+  text-transform: uppercase;
+}
+main .rightcolumn .Remerciement ul li:first-child {
+  font-weight: bold;
+  background-color: #dac933;
+  color: white;
+  padding: 2px;
+  margin-bottom: 10px;
+}
+main .rightcolumn .Remerciement ul li:first-child[aide=voix]:before {
+  content: "🗣️";
+}
+main .rightcolumn .Remerciement ul li:first-child[aide=testeur]:before {
+  content: "🎮";
+}
+main .rightcolumn .Remerciement ul li:first-child[aide=monteur]:before {
+  content: "💾";
+}
+main .rightcolumn .Remerciement ul li:first-child[aide=document]:before {
+  content: "📃";
+}
+main .rightcolumn .Remerciement ul li:not(li:first-child) {
+  margin-left: 10px;
+  padding-bottom: 20px;
+}
+main .rightcolumn .Remerciement ul li:not(li:first-child):before {
+  content: " 👉 ";
+}
+
+footer {
+  flex: 100;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+footer div {
+  list-style-type: none;
+  border-left: #dac933 5px solid;
+  padding-left: 5px;
+  background-color: wheat;
+  border-bottom: #dac933 1px solid;
+}
+footer div p:first-child {
+  background-color: #dac933;
+  font-weight: bold;
+}/*# sourceMappingURL=video.css.map */
