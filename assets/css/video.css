@@ -192,38 +192,24 @@ main .rightcolumn .Remerciement {
 }
 main .rightcolumn .Remerciement ul {
   list-style-type: none;
-  border-left: #dac933 5px solid;
-  padding: 0;
   background-color: white;
-  border-bottom: #dac933 1px solid;
 }
 main .rightcolumn .Remerciement ul li:first-letter {
   text-transform: uppercase;
 }
-main .rightcolumn .Remerciement ul li:first-child {
-  font-weight: bold;
-  background-color: #dac933;
-  color: white;
-  padding: 2px;
-  margin-bottom: 10px;
+main .rightcolumn .Remerciement ul li[aide=voix]:before {
+  content: "🗣️ ";
 }
-main .rightcolumn .Remerciement ul li:first-child[aide=voix]:before {
-  content: "🗣️";
+main .rightcolumn .Remerciement ul li[aide=testeur]:before {
+  content: "🎮 ";
 }
-main .rightcolumn .Remerciement ul li:first-child[aide=testeur]:before {
-  content: "🎮";
+main .rightcolumn .Remerciement ul li[aide=monteur]:before {
+  content: "💾 ";
 }
-main .rightcolumn .Remerciement ul li:first-child[aide=monteur]:before {
-  content: "💾";
+main .rightcolumn .Remerciement ul li[aide=document]:before {
+  content: "📃 ";
 }
-main .rightcolumn .Remerciement ul li:first-child[aide=document]:before {
-  content: "📃";
-}
-main .rightcolumn .Remerciement ul li:not(li:first-child) {
-  margin-left: 10px;
-  padding-bottom: 20px;
-}
-main .rightcolumn .Remerciement ul li:not(li:first-child):before {
+main .rightcolumn .Remerciement ul li:before {
   content: " 👉 ";
 }
 

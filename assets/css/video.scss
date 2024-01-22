@@ -211,54 +211,42 @@ main{
     flex:50%;
     ul {
         list-style-type: none;
-        border-left: $c3 5px solid;
-        padding: 0;
         background-color: $c1;
-        border-bottom: $c3 1px solid;
         li {
             &:first-letter {
                 text-transform: uppercase;
             }
-            &:first-child {
-                font-weight: bold;
-                background-color: $c3;
-                color: white;
-                padding: 2px;
-                margin-bottom: 10px;
                 // C'est partit pour mettre tout les types d'aides et leurs assigner une icone
                 &[aide=voix] {
                     &:before {
-                        content: "🗣️";
+                        content: "🗣️ ";
                     }
                 }
                 &[aide=testeur] {
                     &:before {
-                        content: "🎮";
+                        content: "🎮 ";
                     }
                 }
                 &[aide=monteur] {
                     &:before {
-                        content: "💾";
+                        content: "💾 ";
                     }
                 }
                 &[aide=document] {
                     &:before {
-                        content: "📃";
+                        content: "📃 ";
                     }
                 }
-
-                // C'est bon !
-            }
-            &:not(li:first-child) {
-                margin-left: 10px;
-                padding-bottom: 20px;
                 &:before {
                     content: " 👉 ";
                 }
+                // C'est bon !
+            }
+
             }
         }
     }
-}}}
+}
 
 footer{
     flex:100;

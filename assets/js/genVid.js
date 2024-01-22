@@ -8,7 +8,7 @@ let vid = [{
     "title": "Le Discord (Non-officiel) Joueur du grenier est là !",
     "desc": "Grande PUB pour le Discord Club JDG",
     "minia":"assets/videos/Minias/01.png",
-    "link": "https://dzenetanmassart.github.io/MakeOnWeb/"
+    "link": "assets/videos/02.html"
 }
 
 ]
