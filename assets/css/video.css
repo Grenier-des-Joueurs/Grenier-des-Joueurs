@@ -16,6 +16,14 @@ body {
   margin: auto auto;
 }
 
+.minia {
+  display: flex;
+  justify-content: center;
+}
+.minia img {
+  width: 25vw;
+}
+
 .retour {
   font-size: 20px;
   display: block;

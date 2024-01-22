@@ -19,6 +19,14 @@ body {
     text-overflow: clip;
     margin: auto auto;
 }
+
+.minia{
+display: flex;
+justify-content: center;
+    img{
+        width:25vw;
+    }
+}
 .retour{
     font-size: 20px;
 
