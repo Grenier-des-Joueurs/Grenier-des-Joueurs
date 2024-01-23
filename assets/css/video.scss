@@ -261,6 +261,7 @@ footer{
     display: flex;
     flex-direction: column;
     background-color: $c1;
+    padding:5px;
     div{
         p{
             &:first-child{

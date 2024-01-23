@@ -9,6 +9,12 @@ let vid = [{
     "desc": "Grande PUB pour le Discord Club JDG",
     "minia":"assets/videos/Minias/01.png",
     "link": "assets/videos/02.html"
+},
+{
+    "title": "[ANA JDG] Les Chevaliers du Zodiaque : La Légende d'Or - NES",
+    "desc": 'l\'analyse des défauts évoqués par Joueur du Grenier dans leur test sur "Les Chevaliers du Zodiaque : La Légende d\'Or" sur NES',
+    "minia":"assets/videos/Minias/02.png",
+    "link": "assets/videos/03.html"
 }
 
 ]
