@@ -161,4 +161,8 @@ main #genVid a article h3 {
 
 footer {
   text-align: center;
+}
+footer div {
+  background-color: white;
+  padding: 5px;
 }/*# sourceMappingURL=style.css.map */
