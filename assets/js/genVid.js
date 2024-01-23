@@ -15,6 +15,12 @@ let vid = [{
     "desc": 'l\'analyse des défauts évoqués par Joueur du Grenier dans leur test sur "Les Chevaliers du Zodiaque : La Légende d\'Or" sur NES',
     "minia":"assets/videos/Minias/02.png",
     "link": "assets/videos/03.html"
+},
+{
+    "title": "[ANA JDG] Tintin au Tibet - Megadrive",
+    "desc": 'Analyse des défauts évoqués par Joueur du Grenier dans leur test sur "Tintin au Tibet" sur Megadrive ',
+    "minia":"assets/videos/Minias/03.png",
+    "link": "assets/videos/04.html"
 }
 
 ]

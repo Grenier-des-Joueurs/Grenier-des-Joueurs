@@ -73,8 +73,6 @@ header{
         width:10vw; 
         padding:10px;
         margin:5px;
-    
-        
         &:hover{
             background-color: $c3;
             transform: scale(0.9);
@@ -100,20 +98,18 @@ main{
         border-radius: 50px;
         flex-direction: row;
         .introVid{
-
             padding:20px;
             display: flex;
             @media (max-width: 800px) {
                 align-items: center;
-img{
-    text-align: center;
-    justify-content: space-evenly;
-    height: 65px;
-}
+                img{
+                    text-align: center;
+                    justify-content: space-evenly;
+                    height: 65px;
+                    }
+                }
             }
-        }
         p{
-
             margin: auto auto;
             flex: auto;
             padding: 5px; text-align: center;
@@ -125,7 +121,7 @@ img{
     grid-gap: 10px;
     grid-template-columns: auto;
     margin: 10px;
-   
+    flex-wrap: wrap;
         a{       
             display: flex;
             flex-direction: row-reverse;
@@ -144,7 +140,6 @@ img{
                 color: chocolate;
                 background-color:white;
                 article{
-                    
                     img{
                         transform: scale(0.9);
                         transition: all 0.1s;
@@ -170,9 +165,9 @@ img{
         
         }
             
-        }
-    }
-}
+    }}}
+
+
 
 
 footer{
