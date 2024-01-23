@@ -48,18 +48,28 @@ header p {
   width: 90%;
 }
 
-.onglets {
+.sources {
+  background-color: rgba(0, 0, 0, 0.212);
+  color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+.sources h2 {
+  text-align: center;
+  font-weight: bold;
+}
+.sources .onglets {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
-.onglets a img {
+.sources .onglets a img {
   width: 10vw;
   padding: 10px;
   margin: 5px;
 }
-.onglets a img:hover {
+.sources .onglets a img:hover {
   background-color: #dac933;
   transform: scale(0.9);
   transition: all 0.1s;

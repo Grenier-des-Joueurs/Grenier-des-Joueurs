@@ -52,27 +52,39 @@ header{
         width: 90%;
     }
 }
-.onglets{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    a{
-       
-img{
-    width:10vw; 
-    padding:10px;
-    margin:5px;
 
+.sources{
+    background-color: rgba(0, 0, 0, 0.212);
+    color:$c1;
+    padding:20px;
+    margin-top:20px;
+    h2{
+        text-align: center;
+        font-weight: bold;
+    }
+    .onglets{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        a{
+           
+    img{
+        width:10vw; 
+        padding:10px;
+        margin:5px;
     
-    &:hover{
-        background-color: $c3;
-        transform: scale(0.9);
-        transition: all 0.1s;
+        
+        &:hover{
+            background-color: $c3;
+            transform: scale(0.9);
+            transition: all 0.1s;
+        }
+    }
+        }
     }
 }
-    }
-}
+
 main{
     border-top: rgb(255, 234, 116) solid 20px;
     background-color: rgba(0, 0, 0, 0.274);
